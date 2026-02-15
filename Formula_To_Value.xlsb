@@ -1,0 +1,9 @@
+Sub ConvertFormulasToValues()
+
+'Copy and paste formulas as value in Excel
+
+    Selection.Copy
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks:=False, Transpose:=False
+    Application.CutCopyMode = False
+
+End Sub
